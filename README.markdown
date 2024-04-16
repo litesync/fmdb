@@ -1,9 +1,9 @@
-# OctoFMDB
+# LiteSyncFMDB
 <!--[![Platform](https://img.shields.io/cocoapods/p/FMDB.svg?style=flat)](http://cocoadocs.org/docsets/Alamofire)-->
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/FMDB.svg)](https://img.shields.io/cocoapods/v/FMDB.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-This is an Objective-C wrapper around [OctoDB](http://octodb.io) and [SQLite](https://sqlite.org/).
+This is an Objective-C wrapper around [LiteSync](http://litesync.io) and [SQLite](https://sqlite.org/).
 
 ## The FMDB Mailing List:
 https://groups.google.com/group/fmdb
@@ -17,7 +17,7 @@ Since FMDB is built on top of SQLite, you're going to want to read this page top
 
 ### CocoaPods
 
-OctoFMDB can be installed using [CocoaPods](https://cocoapods.org/).
+LiteSyncFMDB can be installed using [CocoaPods](https://cocoapods.org/).
 
 If you haven't done so already, you might want to initialize the project, to have it produce a `Podfile` template for you:
 
@@ -25,7 +25,7 @@ If you haven't done so already, you might want to initialize the project, to hav
 $ pod init
 ```
 
-Then, edit the `Podfile`, adding `OctoFMDB`:
+Then, edit the `Podfile`, adding `LiteSyncFMDB`:
 
 ```ruby
 # Uncomment the next line to define a global platform for your project
@@ -37,7 +37,7 @@ target 'MyApp' do
 
     # Pods for MyApp2
 
-    pod 'OctoFMDB'
+    pod 'LiteSyncFMDB'
 end
 ```
 
@@ -64,34 +64,34 @@ You can then configure your project as outlined in Carthage's [Getting Started](
 
 ### Swift Package Manager
 
-Declare OctoFMDB as a package dependency.
+Declare LiteSyncFMDB as a package dependency.
 ```swift
 .package(
-    name: "OctoFMDB", 
-    url: "https://github.com/octodb/fmdb", 
+    name: "LiteSyncFMDB",
+    url: "https://github.com/litesync/fmdb",
     .upToNextMinor(from: "1.0.0")),
 ```
 
-Use OctoFMDB in target dependencies
+Use LiteSyncFMDB in target dependencies
 ```swift
-.product(name: "OctoFMDB", package: "OctoFMDB")
+.product(name: "LiteSyncFMDB", package: "LiteSyncFMDB")
 ```
 
 ## Native Libraries
 
-To install the free version of OctoDB native libraries, execute the following in your project root folder:
+To install the free version of LiteSync native libraries, execute the following in your project root folder:
 
 ```
-mkdir octodb && cd octodb
-wget http://octodb.io/download/octodb-free-ios-native-libs.tar.gz
-tar zxvf octodb-free-ios-native-libs.tar.gz
+mkdir litesync && cd litesync
+wget http://litesync.io/download/litesync-free-ios-native-libs.tar.gz
+tar zxvf litesync-free-ios-native-libs.tar.gz
 cd ..
 ```
 
-When moving to the full version of OctoDB just copy the libraries to the respective folders as done above, replacing the existing files.
+When moving to the full version of LiteSync just copy the libraries to the respective folders as done above, replacing the existing files.
 
 
-## OctoFMDB Class Reference:
+## LiteSyncFMDB Class Reference:
 https://ccgus.github.io/fmdb/html/index.html
 
 ## Automatic Reference Counting (ARC) or Manual Memory Management?
